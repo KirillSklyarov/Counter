@@ -27,5 +27,3 @@ class ViewController: UIViewController {
         counterLabel.text = "\(counter)"
     }
 }
-
-
