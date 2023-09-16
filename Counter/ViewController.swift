@@ -8,12 +8,24 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var counter = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        counterLabel.text = "0"
+
+    // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBOutlet weak var keyButton: UIButton!
+    @IBOutlet weak var counterLabel: UILabel!
+    
+    @IBAction func keyButton(_ sender: Any) {
+        counter += 1
+        counterLabel.text = "\(counter)"
+    }
 }
+
 
